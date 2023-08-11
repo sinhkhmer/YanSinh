@@ -1,5 +1,7 @@
 const videoElement = document.getElementById('camera');
+const scanButton = document.getElementById('scanButton');
 let codeReader;
+let qrBox;
 
 async function startBackCamera() {
     try {
@@ -18,14 +20,37 @@ async function startBackCamera() {
 
 startBackCamera();
 
-function handleQrCode(result) {
-    if (result && result.text) {
+scanButton.addEventListener('click', () => {
+    if (codeReader) {
+        codeReader.reset();
+        if (qrBox) qrBox.parentElement.removeChild(qrBox);
+        codeReader.decodeFromVideoElement(videoElement, handleQrCode);
+    }
+});
+
+function handleQrCode(result, err) {
+    if (result) {
         openURL(result.text);
+        highlightQRCode(result.location);
     }
 }
 
 function openURL(url) {
     window.open(url, '_blank');
+}
+
+function highlightQRCode(location) {
+    if (!qrBox) {
+        qrBox = document.createElement('div');
+        qrBox.className = 'qr-box';
+        document.body.appendChild(qrBox);
+    }
+    const scaleX = videoElement.offsetWidth / videoElement.videoWidth;
+    const scaleY = videoElement.offsetHeight / videoElement.videoHeight;
+    qrBox.style.left = location.topLeftCorner.x * scaleX + 'px';
+    qrBox.style.top = location.topLeftCorner.y * scaleY + 'px';
+    qrBox.style.width = (location.bottomRightCorner.x - location.topLeftCorner.x) * scaleX + 'px';
+    qrBox.style.height = (location.bottomRightCorner.y - location.topLeftCorner.y) * scaleY + 'px';
 }
 
 // Detect phone numbers and make them clickable
