@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>សំណួរ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="Enjoy Free Metfone 1$ By Sinh">
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" href="https://img.freepik.com/premium-vector/hand-drawn-friends-logo-design_23-2149577865.jpg?w=360">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9398222472276754"
+     crossorigin="anonymous"></script>
+      <style>
+      body{
+     background: url("https://i.gifer.com/76YS.gif");
+}
+
+header {
+    margin-left: 30px;
+}
+
+/* Your existing styles */
+
+/* Add this to style the restart button */
+#restartButton button {
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#restartButton button:hover {
+  background-color: #333333;
+}
+
+.forms{
+    background-image: url("https://wallpaper.csplague.com/wp-content/uploads/2021/12/100-Vieja-textura-de-papel-de-brown-fondo-de-papel.jpg");
+    margin-left: 10px;
+   
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    width: 300px;
+    float: left;
+    display: box;
+}
+input {
+    margin-bottom: 10px;
+}
+   
+#sinh {
+    position: fixed;
+    left: calc(100vw - 200px);
+    top: calc(100vh - 500px);
+    height: 50px;
+    width: 200px;
+}
+                
+#music {
+    height: 0px;
+    width: 0px;
+  
+}
+        
+#sinh_head_Img {
+   width: 0px;
+   height: 0px;
+}
+#button {
+    background: green;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color:white;
+    font-size: 16px;
+    transition-duration: .5s;
+    margin-top: 15px;
+}
+        
+
+#button:hover{
+    background: white;
+    border: 1px solid green;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+  
+}
+
+#picture{
+    margin-left: 0px;
+    margin-bottom: 20px;
+    border-style: inset;
+    border-color: red;
+    width: 350px;
+}
+
+#select {
+    display: inline;
+   
+} 
+
+#answers_correct {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#messages {
+    margin-left: 20px;
+    margin-top: 20px;
+   
+}
+
+#Submitting {
+    
+    background-image: url("https://previews.123rf.com/images/wutther/wutther1005/wutther100500003/6977933-texture-of-old-book-cover.jpg");
+    padding: 5px 20px 5px 20px;
+    width: 400px;
+    border-radius: 20px;
+    float: left;
+    margin-left: 15px;
+    display: none;
+    background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/antique-style-lined-paper-template-design-f0afe8303318fda46d4c362bd2d0d70d_screen.jpg?ts=1651676149");
+
+}
+      </style>
+      
+      <script>
+      
+function check(){
+    var correct = 0;
+    var question1 = document.quiz.question1.value;
+    var question2 = document.quiz.question2.value;
+    var question3 = document.quiz.question3.value;
+    var question4 = document.quiz.question4.value;
+    var question5 = document.quiz.question5.value;
+    var question6 = document.quiz.question6.value;
+    var question7 = document.quiz.question7.value;
+    var question8 = document.quiz.question8.value;
+    var question9 = document.quiz.question9.value;
+    var question10 = document.quiz.question10.value;
+    var question11 = document.quiz.question11.value;
+    var question12 = document.quiz.question12.value;
+    var question13 = document.quiz.question13.value;
+    var question14 = document.quiz.question14.value;
+    var question15 = document.quiz.question15.value;
+   
+    
+    var div1 = document.getElementById("easy");
+    var div2 = document.getElementById("Submitting");
+    var div3 = document.getElementById("medium");
+    var div4 = document.getElementById("hard");
+    var head = document.getElementById("header");
+    
+    var score;
+    var messages = ["Admin FB: Yan Sinh<br/>get card Metfone 1$  now<br\>*1204*214225986772787#",
+        "ចុមប្រូរធ្វើបាន wow ល្អប្រូរនៅតិចទៀតចិតបានហើយ!",
+        "មិនអាក្រក់​ទេ! អ្នកអាចចូលរួមកម្មវិធី Night's Watch!",
+        "ធ្ងន់ធ្ងរ? អ្នកមិនដឹងអ្វីទេ ...",
+        "ឯងនិយាយលេងទេ?! ចូល​មើល​ភាគ​ខ្លះ!",
+        "ការចងចាំរបស់អ្នកងងឹតហើយពោរពេញដោយ ... កំហុស! ទៅ ហើយ​ធ្វើ​ការ​ឡើងវិញ​នូវ​អ្វី​ដែល​បាន​កើត​ឡើង​នៅ​ក្នុង​វគ្គ​មុន​!"];
+    var pictures = ["https://c.tenor.com/6OAM535OZ-QAAAAC/hacker-mask.gif",
+        "https://c.tenor.com/spSgkqK707kAAAAC/ok-all.gif",
+        "https://media.giphy.com/media/3ohzdUi5U8LBb4GD4s/giphy.gif",
+        "https://i.giphy.com/media/xUPGGowZAkTTHvsLOU/giphy.webp",
+        "https://media.tenor.com/jJWcvhv7IfcAAAAM/oh-no.gif",
+        "https://miro.medium.com/max/390/1*eKABkUzJKEc9oWoFf9qrpQ.gif"];
+    
+    //questions
+    
+    if (question1 == "1"){
+        correct++;
+    }
+    
+    if (question2 == "1"){
+        correct++;
+    }
+    
+    if (question3 == "1"){
+        correct++;
+    }
+    
+    if (question4 == "1"){
+        correct++;
+    }
+    
+    if (question5 == "1"){
+        correct++;
+    }
+    
+    if (question6 == "1"){
+        correct++;
+    }
+    
+    if (question7 == "1"){
+        correct++;
+    }
+    
+    if (question8 == "1"){
+        correct++;
+    }
+    
+    if (question9 == "1"){
+        correct++;
+    }
+    
+    if (question10 == "1"){
+        correct++;
+    }
+    
+    if (question11 == "1"){
+        correct++;
+    }
+    
+    if (question12 == "1"){
+        correct++;
+    }
+    
+    if (question13 == "1"){
+        correct++;
+    }
+    
+    if (question14 == "1"){
+        correct++;
+    }
+    
+    if (question15 == "1"){
+        correct++;
+    }
+   
+    
+    
+    
+    
+    //check the score
+    
+    if (correct <= 3) {
+        score = 5;
+    } else if (correct >=4 && correct <= 6){
+        score = 4;
+    } else if (correct >=7 && correct <= 9){
+        score = 3;
+    } else if (correct >=10 && correct <= 12){
+        score = 2;
+    } else if (correct >=13 && correct <= 14){
+        score = 1;
+    } else {
+        score = 0;
+    }
+    
+    
+    
+    document.getElementById("messages").innerHTML = messages[score];  
+    document.getElementById("answers_correct").innerHTML = "អ្នកធ្វើត្រូវ " + correct +" សំណួរ ";  
+    document.getElementById("picture").src = pictures[score];
+
+    
+    if( div2.style.display == "none" )
+   {
+      /*div1.style.display = "none";
+      div2.style.display = "none";
+      div3.style.display = "block";
+      div4.style.display = "block"; */
+   }
+   else
+   {
+      div1.style.display = "none";
+      div2.style.display = "block";
+      div3.style.display = "none";
+      div4.style.display = "none";
+     
+      head.style.display = "none";
+      
+   }
+    
+    
+    
+ 
+}
+      
+       
+  var musicTracks = [
+    "https://f.top4top.io/m_1206zylby1.mp3",
+    "https://dl.dropbox.com/s/5jyylqps64nyoez/Legends%20never%20die.mp3?dl=0",
+    "https://dl.dropbox.com/s/1sw4ysdgmkb5dse/Salvation.mp3?dl=0" ,
+  
+  ];
+
+  // Function to play a random track
+  function playRandomTrack() {
+    var randomIndex = Math.floor(Math.random() * musicTracks.length);
+    var musicPlayer = document.getElementById("music");
+    musicPlayer.src = musicTracks[randomIndex];
+    musicPlayer.play();
+  }
+
+  // Call the function to play a random track on page load
+  window.onload = playRandomTrack;
+    
+      </script>
+        <script src="main.js"></script>
+    </head>
+    <header id="header">
+      <h3>
+      <span style="color:#ffcc00">Enjoy
+        <span style="color:#00ff00"> Ah
+          <span style="color:#0000ff"> Oun
+           <span style="color:#ff0000"> Phoeub
+            </span>
+            </span>
+          </span>
+        </span>     
+      </h3>
+      <img id="sinh_head_Img" src="https://img.freepik.com/premium-photo/group-people-with-their-arms-up-air_846334-854.jpg" alt="your Internet is Slow...."><br/>
+
+      <img id="randomImage" src="https://media.tenor.com/Mzc9A_tkLm4AAAAC/alone-sad.gif" alt="Sad" width="311" height="200">
+     
+  </header>
+   
+    <body>
+      <div id="bg">
+        <div id="easy" class="forms">
+            <form id="quiz" name="quiz">
+               <p style="color:cyan">
+                 <span style="color:#00ff00">1.</span>
+                 តើវីរនារីឆ្មើមកម្ពុជារូបណាដែលបានឈ្នះមេដាយមាសពិភពលោកលើកទី2 </p>
+               <input id="select" type="radio" name="question1" value="0">1. ហែម ថុនវិទិនី<br>
+               <input id="select" type="radio" name="question1" value="1">2. កែ ឡេង<br>
+               <input id="select" type="radio" name="question1" value="0">3. ស៊ន សៀវលី<br>
+               <input id="select" type="radio" name="question1" value="0">4. ស៊ន សៀវមុី<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">2.</span>
+                 តើភរិយាររបស់លោកតាក្រមង៉ុយមាននាមអ្វី​?</p>
+               <input id="select" type="radio" name="question2" value="0">1. លោកយាយ ឯម<br>
+               <input id="select" type="radio" name="question2" value="1">2. លោកយាយ អុិន<br>
+               <input id="select" type="radio" name="question2" value="0">3. លោកយាយ រ័ត្ន<br>
+               <input id="select" type="radio" name="question2" value="0">4. លោកយាយ វ៉ែន:<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">3.</span>
+                 រឿងគូកំណែន ត្រូវបាននិពន្ធដោយលោក...</p>
+               <input id="select" type="radio" name="question3" value="0">1. លោក យស ងិន<br>
+               <input id="select" type="radio" name="question3" value="0">2. លោក ឌឿក អំ<br>
+               <input id="select" type="radio" name="question3" value="1">3. លោក អុឹម <br>
+               <input id="select" type="radio" name="question3" value="0">4. លោក ឌឹក គាម<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">4.</span>
+                 រឿងផ្កាស្រពានត្រូវបាននិពន្ធឡើងនៅឆ្នាំណា?</p>
+               <input id="select" type="radio" name="question4" value="1">1. 1949<br>
+               <input id="select" type="radio" name="question4" value="0">2. 1959<br>
+               <input id="select" type="radio" name="question4" value="0">3. 1950<br>
+               <input id="select" type="radio" name="question4" value="0">4. 1940<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">5.</span>
+                 ក្រុមហុន apple ចាប់កំណើតនៅថ្ងៃខែឆ្នាំណា?</p>
+               <input id="select" type="radio" name="question5" value="0">1. 2 មេសា 1976<br>
+               <input id="select" type="radio" name="question5" value="0">2. 3 មេសា 1976<br>
+               <input id="select" type="radio" name="question5" value="1">3. 1 មេសា 1976<br>
+               <input id="select" type="radio" name="question5" value="0">4. 4 មេសា 1976<br>
+       
+               
+        </div><br>
+        <div id="medium" class="forms">
+                <p style="color:cyan">
+                  <span style="color:#00ff00">6.</span>
+                  ក្រុមហុន rolls royce ស្ថិតក្រមការត្រួតត្រារបស់ណា</p>
+               <input id="select" type="radio" name="question6" value="0">1. Mercedes benz<br>
+               <input id="select" type="radio" name="question6" value="0">2. Lamborghini<br>
+               <input id="select" type="radio" name="question6" value="0">3. porsche<br>
+               <input id="select" type="radio" name="question6" value="1">4. BMW<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">7.</span>
+                 តើអ្នកណាជាម្ចាស់ពានរង្វាន់ The Voice Cambodia រដូវកាលទី2</p>
+               <input id="select" type="radio" name="question7" value="0">1. សាន ស្រីឡៃ<br>
+               <input id="select" type="radio" name="question7" value="1">2. ថែល ថៃ<br>
+               <input id="select" type="radio" name="question7" value="0">3. រ៉េត សូសារណា<br>
+               <input id="select" type="radio" name="question7" value="0">4. ឈឺនរតនះ<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">8.</span>
+                 កម្មវិធីទំនាក់ទំនងឧស្សាហកម្ម ចាប់ផ្តើមអនុវត្តិនៅឆ្នាំណា?</p>
+               <input id="select" type="radio" name="question8" value="0">1. 2000<br>
+               <input id="select" type="radio" name="question8" value="0">2. 1998<br>
+               <input id="select" type="radio" name="question8" value="0">3. 2004<br>
+               <input id="select" type="radio" name="question8" value="1">4. 2002<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">9.</span>
+                 ទិវាស៊ានត្រូវបានប្រារព្ធធ្វើឡើងនៅថ្ងៃណា?</p>
+               <input id="select" type="radio" name="question9" value="0">1. 9 វិច្ឆិកាសី<br>
+               <input id="select" type="radio" name="question9" value="0">2. 10 ធ្នូ<br>
+               <input id="select" type="radio" name="question9" value="0">3. 7 មករា<br>
+               <input id="select" type="radio" name="question9" value="1">4. 8 សីហា<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">10.</span>
+                 ប្រជាជនសរុមរបស់ប្រទេសសមាជិកអាស៊ានមានប្រហែល..</p>
+               <input id="select" type="radio" name="question10" value="0">1. 400 លាននាក់<br>
+               <input id="select" type="radio" name="question10" value="1">2. 500 លាននាក់<br>
+               <input id="select" type="radio" name="question10" value="0">3. 3000 លាននាក់<br>
+               <input id="select" type="radio" name="question10" value="0">4. 200 លាននាក់<br>
+        </div><br>
+        <div id="hard" class="forms">
+            <p style="color:cyan">
+              <span style="color:#00ff00">11.</span>
+              តើអាហារមួយណាដែលស្ត្រីមានផ្ទៃពោះគួរចៀសវាង?</p>
+               <input id="select" type="radio" name="question11" value="1">1. ជាតិជូរផ្អាប់<br>
+               <input id="select" type="radio" name="question11" value="0">2. សំបូរជាតិកាលស្យ៉ូម<br>
+               <input id="select" type="radio" name="question11" value="0">3. ជាតិផ្អែម<br>
+               <input id="select" type="radio" name="question11" value="0">4. ជាតិសាច់ ប្រូតេអុីន<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">12.</span>
+                 តើអាស៊ានកំណត់យកថ្ងៃណាជាថ្ងៃបរិស្ថានអាស៊ាន?</p>
+               <input id="select" type="radio" name="question12" value="0">1. 2002<br>
+               <input id="select" type="radio" name="question12" value="1">2. 2003<br>
+               <input id="select" type="radio" name="question12" value="0">3. 2004<br>
+               <input id="select" type="radio" name="question12" value="0">4. 1999<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">13.</span>
+                  តើព្រះរាជាអង្គណាដែបានកសាងរាជធានីឧត្តុង?</p>
+               <input id="select" type="radio" name="question13" value="0">1. ព្រះបាទពញ្ញយ៉ាត<br>
+               <input id="select" type="radio" name="question13" value="0">2. ព្រះបាទសូរុវិរ័្មនទី 9<br>
+               <input id="select" type="radio" name="question13" value="1">3. ព្រះបាទជ័យជេដ្ជាទី 2<br>
+               <input id="select" type="radio" name="question13" value="0">4. ព្រះបាទត្រសក់ផ្អែម<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">14.</span>
+                  កំប៉ុកក្រពុំអង្គុយលើភ្នំពាក់អាវក្បាលសូត្</p>
+               <input id="select" type="radio" name="question14" value="1">1. គីង្គក់<br>
+               <input id="select" type="radio" name="question14" value="0">2. កង្កែម<br>
+               <input id="select" type="radio" name="question14" value="0">3. ក្អាត់<br>
+               <input id="select" type="radio" name="question14" value="0">4. ហុីង<br>
+               <p style="color:cyan">
+                 <span style="color:#00ff00">15.</span>
+                  ភ្នំដែលខ្ពស់ជាងគេលើលោកស្ថិតក្នុងទ្វិប..</p>
+               <input id="select" type="radio" name="question15" value="0">1. អុីរ៉ុប​<br>
+               <input id="select" type="radio" name="question15" value="0">2. អាមេរិក<br>
+               <input id="select" type="radio" name="question15" value="1">3. អាសុី<br>
+               <input id="select" type="radio" name="question15" value="0">4. អាហ្រ្វិករ<br>
+         <center>
+               <input id="button" type="button" value="           ដាក់ស្នើ           " onclick="check();"><hr/>
+           <br/><span style="color:cyan">Make By Sinh</span>
+          </center>
+               <div style="color:red" id="sinh">Sinh</div><br/>
+          </div>
+            </form>
+       
+        </div>
+        
+        <audio id="music" controls autoplay>
+  <source src="" type="audio/mpeg">
+</audio>
+   
+             <script src="script.js"></script>
+        <div id="Submitting">
+          <center>
+            <h2 style="color:#00ff00" id="answers_correct">Score goes here</h2></center>
+            <h4 style="color:yellow" id="messages">Message goes here</h4>
+         <center>
+        
+            <img id ="picture"><h3>
+            <div id="restartButton">
+                <button onclick="restartWebsite()">ចុចទីនេះដើម្បីលេងម្តងទៀត</button>
+         </div>
+       
+          </h3>
+           </center>
+        </div> 
+    </body>
+</html>
