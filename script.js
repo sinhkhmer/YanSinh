@@ -15,3 +15,15 @@ loginForm.addEventListener('submit', function(event) {
         alert('Invalid credentials. Please try again.');
     }
 });
+
+       // script.js
+document.addEventListener("DOMContentLoaded", function() {
+    const restartButton = document.getElementById("restart");
+
+    restartButton.addEventListener("click", function() {
+        // Reload the current webpage
+        location.reload();
+    });
+});
+
+        
