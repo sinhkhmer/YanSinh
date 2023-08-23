@@ -1,0 +1,113 @@
+body{
+     background: url("https://i.gifer.com/76YS.gif");
+}
+
+header {
+    margin-left: 30px;
+}
+
+/* Your existing styles */
+
+/* Add this to style the restart button */
+#restart button {
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#restart button:hover {
+  background-color: #333333;
+}
+
+.forms{
+    background-image: url("https://wallpaper.csplague.com/wp-content/uploads/2021/12/100-Vieja-textura-de-papel-de-brown-fondo-de-papel.jpg");
+    margin-left: 10px;
+   
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    width: 300px;
+    float: left;
+    display: box;
+}
+input {
+    margin-bottom: 10px;
+}
+   
+#sinh {
+    position: fixed;
+    left: calc(100vw - 200px);
+    top: calc(100vh - 500px);
+    height: 50px;
+    width: 200px;
+}
+                
+#music {
+    height: 0px;
+    width: 0px;
+  
+}
+        
+#sinh_head_Img {
+   width: 0px;
+   height: 0px;
+}
+#button {
+    background: green;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color:white;
+    font-size: 16px;
+    transition-duration: .5s;
+    margin-top: 15px;
+}
+        
+
+#button:hover{
+    background: white;
+    border: 1px solid green;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+  
+}
+
+#picture{
+    margin-left: 0px;
+    margin-bottom: 20px;
+    border-style: inset;
+    border-color: red;
+    width: 350px;
+}
+
+#select {
+    display: inline;
+   
+} 
+
+#answers_correct {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#messages {
+    margin-left: 20px;
+    margin-top: 20px;
+   
+}
+
+#Submitting {
+    
+    background-image: url("https://previews.123rf.com/images/wutther/wutther1005/wutther100500003/6977933-texture-of-old-book-cover.jpg");
+    padding: 5px 20px 5px 20px;
+    width: 400px;
+    border-radius: 20px;
+    float: left;
+    margin-left: 15px;
+    display: none;
+    background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/antique-style-lined-paper-template-design-f0afe8303318fda46d4c362bd2d0d70d_screen.jpg?ts=1651676149");
+
+}
