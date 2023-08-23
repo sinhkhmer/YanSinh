@@ -180,3 +180,7 @@ document.addEventListener("DOMContentLoaded", function() {
         location.reload();
     });
 });
+
+         alert("Admin   SINH  \n ______   ______\n to Make Web By Codes \n HTML CSS JAVASCRIPT  PHP \n you go to learn HTML now to make a web \n E N D ");
+
+
