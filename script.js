@@ -12,7 +12,7 @@ loginForm.addEventListener('submit', function(event) {
         // Redirect to the welcome page on successful login
         window.location.href = 'welcome.html';
     } else {
-        alert('Invalid credentials. Please try again.');
+        alert('លិខិត​សម្គាល់​មិន​ត្រឹមត្រូវ។ សូម​ព្យាយាម​ម្តង​ទៀត។');
     }
 });
 
