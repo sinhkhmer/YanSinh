@@ -1,113 +1,63 @@
-body{
-     background: url("https://i.gifer.com/76YS.gif");
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    margin-left: 30px;
+.header {
+    background-color: #4267B2;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-/* Your existing styles */
-
-/* Add this to style the restart button */
-#restart button {
-  background-color: black;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+.header img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 
-#restart button:hover {
-  background-color: #333333;
+nav {
+    margin-left: auto;
 }
 
-.forms{
-    background-image: url("https://wallpaper.csplague.com/wp-content/uploads/2021/12/100-Vieja-textura-de-papel-de-brown-fondo-de-papel.jpg");
-    margin-left: 10px;
-   
-    padding: 10px 20px 10px 20px;
-    border-radius: 20px;
-    width: 300px;
-    float: left;
-    display: box;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
 }
-input {
+
+.main-content {
+    padding: 20px;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
 }
-   
-#sinh {
-    position: fixed;
-    left: calc(100vw - 200px);
-    top: calc(100vh - 500px);
-    height: 50px;
-    width: 200px;
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
-                
-#music {
-    height: 0px;
-    width: 0px;
-  
-}
-        
-#sinh_head_Img {
-   width: 0px;
-   height: 0px;
-}
-#button {
-    background: green;
-    border: none;
-    border-radius: 5px;
+
+.footer {
+    text-align: center;
     padding: 10px;
-    color:white;
-    font-size: 16px;
-    transition-duration: .5s;
-    margin-top: 15px;
+    background-color: #f0f0f0;
+    color: #888;
 }
-        
-
-#button:hover{
-    background: white;
-    border: 1px solid green;
-    color: black;
-    cursor: pointer;
-    font-size: 30px;
-  
+.post-image {
+    max-width: 100%;
+    margin-top: 10px;
 }
 
-#picture{
-    margin-left: 0px;
-    margin-bottom: 20px;
-    border-style: inset;
-    border-color: red;
-    width: 350px;
-}
-
-#select {
-    display: inline;
-   
-} 
-
-#answers_correct {
-    margin-left: 20px;
-    margin-top: 20px;
-}
-#messages {
-    margin-left: 20px;
-    margin-top: 20px;
-   
-}
-
-#Submitting {
-    
-    background-image: url("https://previews.123rf.com/images/wutther/wutther1005/wutther100500003/6977933-texture-of-old-book-cover.jpg");
-    padding: 5px 20px 5px 20px;
-    width: 400px;
-    border-radius: 20px;
-    float: left;
-    margin-left: 15px;
-    display: none;
-    background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/antique-style-lined-paper-template-design-f0afe8303318fda46d4c362bd2d0d70d_screen.jpg?ts=1651676149");
-
-}
