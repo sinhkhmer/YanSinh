@@ -49,3 +49,10 @@ button {
 button:hover {
     background-color: #555;
 }
+/* Add this at the end of your existing CSS code */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+}
+
