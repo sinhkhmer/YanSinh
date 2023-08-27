@@ -220,4 +220,8 @@ nav a {
     flex-grow: 1;
 }
 
-/* Other existing styles */
+#music {
+    height: 0px;
+    width: 0px;
+  
+}
