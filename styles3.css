@@ -190,3 +190,34 @@ nav a {
     margin: 5px 0;
 }
 
+/* Your existing styles */
+
+.messages {
+    padding: 20px;
+    text-align: center;
+}
+
+.message-list {
+    list-style: none;
+    padding: 0;
+}
+
+.message-list li {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    text-align: left;
+}
+
+.message-list img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message-content {
+    flex-grow: 1;
+}
+
+/* Other existing styles */
