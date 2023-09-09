@@ -19,10 +19,11 @@
             width: 80%;
         }
 
-        h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
+     h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   }
 
         .input-group {
             position: relative;
