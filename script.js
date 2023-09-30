@@ -11,7 +11,7 @@
                 feedback.textContent = '';
                 window.location.href = 'welcome.html';
             } else {
-                feedback.textContent = 'លិខិត​សម្គាល់​មិន​ត្រឹមត្រូវ។ សូម​ព្យាយាម​ម្តង​ទៀត។';
+                feedback.textContent = 'លិខិត​សម្គាល់​មិន​ត្រឹមត្រូវ។;
             }
         });
 
