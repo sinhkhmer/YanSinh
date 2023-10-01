@@ -125,3 +125,6 @@ nav a {
     max-width: 100%;
     margin-top: 10px;
 }
+#audio-container {
+    display: none;
+}
