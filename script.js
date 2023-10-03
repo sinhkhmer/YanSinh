@@ -25,5 +25,9 @@
                 passwordInput.type = 'password';
             }
         });
+document.addEventListener('DOMContentLoaded', function() {
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    backgroundMusic.volume = 0.5;
+});
 
 
