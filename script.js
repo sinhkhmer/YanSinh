@@ -6,7 +6,7 @@
             const password = document.getElementById('password').value;
             if (username === 'sinh@123' && password === 'sinh@123') {
                 feedback.textContent = '';
-                window.location.href = 'welcome.html';
+                window.location.href = 'ilm4ebsnlm42ninnnsinfisufeniwuUHIHsbi23BHIGBUFGBWIFUGBWIUGFBGWgubwiw9ghfugwisugvfuisbcisugfwi8uwghfiuwg.html';
             } else {
                 feedback.textContent = 'លិខិត​សម្គាល់​មិន​ត្រឹមត្រូវ។';
             }
